@@ -22,5 +22,33 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', 'Source Code Pro', 'Roboto Mono', sans-serif;
+}
+
+body, html {
+  background-color: #2C2C2C;
+  color: #E4E4E4;
+}
+
+@keyframes wave {
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(16.0deg) }  
+  20% { transform: rotate(-10.0deg) }
+  30% { transform: rotate(16.0deg) }
+  40% { transform: rotate(-6.0deg) }
+  50% { transform: rotate(6.0deg) }
+  60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
+
+.waving-hand {
+  display: inline-block;
+  animation: wave 2.5s infinite linear ;
+  transform-origin: 70% 70%;
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.waving-hand:hover {
+  animation-play-state: running; /* Play animation on mouse hover */
 }
