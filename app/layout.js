@@ -23,9 +23,14 @@ export const metadata = {
   description: "Welcome to my personal portfolio website.",
   icons: {
     icon: [
-      { url: '/icon.svg', type: 'image/svg' },
-    ]}
-};
+      {
+        url: "/images/icon-512.png", // /public path
+        href: "/images/icon-512.png", // /public path
+      },
+    ],
+    apple: ['/images/apple-icon.png'],
+  },
+}
 
 export default function RootLayout({ children }) {
   return (
