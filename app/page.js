@@ -1,13 +1,13 @@
-import Intro from "./components/IntroSection";
+import Intro from "./components/Intro";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div>
-      <main className="min-h-screen">
-        <div className="mx-auto">
+      <main className="min-h-screen ">
+        <div>
           <Intro />
+          <Footer />
         </div>
       </main>
-    </div>
   );
 }
